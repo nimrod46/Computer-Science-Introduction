@@ -32,11 +32,6 @@ def test_RGB2grayscale():
     assert RGB2grayscale(
         [[[100, 180, 240], [1, 1, 1]], [[0, 0, 0], [-1, -2, 5]]]) == [[163, 1],
                                                                       [0, 0]]
-
-
-test_separate_channels()
-test_combine_channels()
-test_RGB2grayscale()
 """
 def test_kernel():
     assert blur_kernel(3) == [[1 / 9, 1 / 9, 1 / 9], [1 / 9, 1 / 9, 1 / 9],

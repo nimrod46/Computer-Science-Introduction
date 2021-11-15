@@ -1,7 +1,7 @@
 """
 Student: Nimrod Machlav
 ID: 315230185
-Assignment no. 3
+Assignment no. 2
 Program: dice.py
 """
 
@@ -37,4 +37,5 @@ def main():
         print(i, end=" ")
 
 
-main()
+if __name__ == '__main__':
+    main()

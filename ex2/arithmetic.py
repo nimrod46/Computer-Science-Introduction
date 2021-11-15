@@ -39,12 +39,12 @@ def main():
     last_num = numbers[index]
     print("Longest arithmetic sequence: ", end="")
     print(last_num, end="")
-    for num in numbers[index+1:]:   # Printing the arithmetic separated by commas
         if last_num - num != diff:
             break
-        print(end=",")
+        print(end=", ")
         print(num, end="")
         last_num = num
 
 
-main()
+if __name__ == '__main__':
+    main()

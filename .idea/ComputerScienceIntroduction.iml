@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$/../Computer ScienceIntroduction">
-      <excludeFolder url="file://$MODULE_DIR$/../Computer ScienceIntroduction/ENV" />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/ENV" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.8 (ENV)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.8 (Computer ScienceIntroduction)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>

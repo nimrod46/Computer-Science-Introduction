@@ -35,4 +35,5 @@ def main():
     print_triangle(height, dollars_count, spaces_count)
 
 
-main()
+if __name__ == '__main__':
+    main()

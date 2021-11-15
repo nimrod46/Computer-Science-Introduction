@@ -1,7 +1,7 @@
 """
 Student: Nimrod Machlav
 ID: 315230185
-Assignment no. 1
+Assignment no. 2
 Program: arithmetic.py
 """
 
@@ -39,6 +39,7 @@ def main():
     last_num = numbers[index]
     print("Longest arithmetic sequence: ", end="")
     print(last_num, end="")
+    for num in numbers[index + 1:]:  # Printing the arithmetic separated by commas
         if last_num - num != diff:
             break
         print(end=", ")

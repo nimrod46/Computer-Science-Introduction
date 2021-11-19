@@ -1,3 +1,11 @@
+"""
+Student: Nimrod Machlav
+ID: 315230185
+Assignment no. 3
+Program: prime_decomposition.py
+"""
+
+
 import math
 
 

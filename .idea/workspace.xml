@@ -20,27 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="69aa8660-8e9e-4061-959d-ad82abd27c41" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ex3/genes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex3/genome1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex3/genome2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex3/genome3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex3/genome4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex3/genome5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex3/genome6.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex3/testing/gene_files/genome1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex3/testing/gene_files/genome2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex3/testing/gene_files/genome3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex3/testing/gene_files/genome4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex3/testing/gene_files/genome5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex3/testing/gene_files/genome6.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex3/testing/proteins_files/genome1_proteins.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex3/testing/proteins_files/genome2_proteins.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex3/testing/proteins_files/genome3_proteins.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex3/testing/proteins_files/genome4_proteins.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex3/testing/proteins_files/genome5_proteins.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex3/testing/proteins_files/genome6_proteins.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex3/testing/test_genes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/nimrod.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex3/genes.py" beforeDir="false" afterPath="$PROJECT_DIR$/ex3/genes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex3/prime_decomposition.py" beforeDir="false" afterPath="$PROJECT_DIR$/ex3/prime_decomposition.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex3/testing/test_prime_decomposition.py" beforeDir="false" afterPath="$PROJECT_DIR$/ex3/testing/test_prime_decomposition.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +153,7 @@
       <updated>1637317498389</updated>
       <workItem from="1637317499624" duration="81000" />
       <workItem from="1637317581748" duration="88000" />
-      <workItem from="1637317671958" duration="12472000" />
+      <workItem from="1637317671958" duration="13248000" />
     </task>
     <servers />
   </component>
@@ -196,22 +180,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1637317669677" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1637333452696">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1637333893605">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1637333452696" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1637333452695">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1637333893605" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1637333893604">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1637333452695" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1637333452695">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1637333893604" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1637333893604">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1637333452695" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1637333452696">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1637333893604" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1637333893605">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1637333452696" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1637333893605" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1637330514719">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

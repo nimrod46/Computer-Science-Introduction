@@ -1,3 +1,11 @@
+"""
+Student: Nimrod Machlav
+ID: 315230185
+Assignment no. 3
+Program: genes.py
+"""
+
+
 def next_gene(i, s):
     s = str(s[i:])
     gene_start = s.find("ATG")
@@ -19,7 +27,36 @@ def get_genes(s):
     return genes
 
 
-dct = {
+def gene_to_protein(gene):
+    gene_text = ""
+    for i in range(0, len(gene) - 3, 3):
+        gene_text += symbols_by_codons[gene[i: i + 3]]
+    return gene_text
+
+
+def get_proteins(genes):
+    amino_acids = []
+    for gene in genes:
+        amino_acids.append(gene_to_protein(gene))
+    return amino_acids
+
+
+def main():
+    file_name = input("Type file name to translate: ")
+    with open(file_name + ".txt") as f:
+        text = f.read()
+        genes = get_genes(text)
+        proteins = get_proteins(genes)
+        print("Found", len(proteins), "genes")
+        with open(file_name + "_proteins.txt", "w") as output:
+            for protein in proteins:
+                output.write(protein + "\n")
+
+
+if __name__ == '__main__':
+    main()
+
+symbols_by_codons = {
     "GCT": "A",
     "GCC": "A",
     "GCA": "A",
@@ -82,33 +119,3 @@ dct = {
     "TAC": "Y",
     "TAT": "Y",
 }
-
-
-def gene_to_protein(gene):
-    gene_text = ""
-    for i in range(0, len(gene) - 3, 3):
-        gene_text += dct[gene[i: i + 3]]
-    return gene_text
-
-
-def get_proteins(genes):
-    amino_acids = []
-    for gene in genes:
-        amino_acids.append(gene_to_protein(gene))
-    return amino_acids
-
-
-def main():
-    file_name = input("Type file name to translate")
-    with open(file_name + ".txt") as f:
-        text = f.read()
-        genes = get_genes(text)
-        proteins = get_proteins(genes)
-        print("Found", len(proteins), "genes")
-        with open(file_name + "_proteins.txt", "w") as output:
-            for protein in proteins:
-                output.write(protein + "\n")
-
-
-if __name__ == '__main__':
-    main()

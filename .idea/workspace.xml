@@ -19,13 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="69aa8660-8e9e-4061-959d-ad82abd27c41" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/nimrod.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex3/genes.py" beforeDir="false" afterPath="$PROJECT_DIR$/ex3/genes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex3/prime_decomposition.py" beforeDir="false" afterPath="$PROJECT_DIR$/ex3/prime_decomposition.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex3/testing/test_prime_decomposition.py" beforeDir="false" afterPath="$PROJECT_DIR$/ex3/testing/test_prime_decomposition.py" afterDir="false" />
-    </list>
+    <list default="true" id="69aa8660-8e9e-4061-959d-ad82abd27c41" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -153,7 +147,7 @@
       <updated>1637317498389</updated>
       <workItem from="1637317499624" duration="81000" />
       <workItem from="1637317581748" duration="88000" />
-      <workItem from="1637317671958" duration="13248000" />
+      <workItem from="1637317671958" duration="13843000" />
     </task>
     <servers />
   </component>

@@ -20,18 +20,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="69aa8660-8e9e-4061-959d-ad82abd27c41" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Computer-Science-Introduction.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex3/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex3/prime_decomposition.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex3/testing/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex3/testing/test_prime_decomposition.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ComputerScienceIntroduction.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/nimrod.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex3/genes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex3/genome1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex3/genome2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex3/genome3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex3/genome4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex3/genome5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex3/genome6.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex3/testing/gene_files/genome1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex3/testing/gene_files/genome2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex3/testing/gene_files/genome3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex3/testing/gene_files/genome4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex3/testing/gene_files/genome5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex3/testing/gene_files/genome6.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex3/testing/proteins_files/genome1_proteins.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex3/testing/proteins_files/genome2_proteins.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex3/testing/proteins_files/genome3_proteins.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex3/testing/proteins_files/genome4_proteins.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex3/testing/proteins_files/genome5_proteins.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex3/testing/proteins_files/genome6_proteins.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex3/testing/test_genes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,10 +67,44 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ex3/testing" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Python.prime_decomposition">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\nimrod\Documents\GitHub\Computer-Science-Introduction\ex3\testing" />
+      <recent name="C:\Users\nimrod\Documents\GitHub\Computer-Science-Introduction\ex3" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\nimrod\Documents\GitHub\Computer-Science-Introduction\ex3\testing\protiens_files" />
+      <recent name="C:\Users\nimrod\Documents\GitHub\Computer-Science-Introduction\ex3\testing" />
+      <recent name="C:\Users\nimrod\Documents\GitHub\Computer-Science-Introduction\ex3\testing\tests_files" />
+      <recent name="C:\Users\nimrod\Documents\GitHub\Computer-Science-Introduction\ex3" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.genes">
+    <configuration name="genes" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Computer-Science-Introduction" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ex3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ex3/genes.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="prime_decomposition" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Computer-Science-Introduction" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -108,8 +151,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.prime_decomposition" />
+        <item itemvalue="Python.genes" />
         <item itemvalue="Python.test_prime_decomposition" />
+        <item itemvalue="Python.prime_decomposition" />
       </list>
     </recent_temporary>
   </component>
@@ -125,7 +169,7 @@
       <updated>1637317498389</updated>
       <workItem from="1637317499624" duration="81000" />
       <workItem from="1637317581748" duration="88000" />
-      <workItem from="1637317671958" duration="4713000" />
+      <workItem from="1637317671958" duration="12472000" />
     </task>
     <servers />
   </component>
@@ -144,53 +188,62 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
+    <state x="732" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1637329752746">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="732" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1637329752746" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1637317669677">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1637317669677" />
-    <state width="938" height="282" key="GridCell.Tab.0.bottom" timestamp="1637322680120">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1637333452696">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1637322680120" />
-    <state width="938" height="282" key="GridCell.Tab.0.center" timestamp="1637322680119">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1637333452696" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1637333452695">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1637322680119" />
-    <state width="938" height="282" key="GridCell.Tab.0.left" timestamp="1637322680119">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1637333452695" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1637333452695">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1637322680119" />
-    <state width="938" height="282" key="GridCell.Tab.0.right" timestamp="1637322680120">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1637333452695" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1637333452696">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1637322680120" />
-    <state width="938" height="348" key="GridCell.Tab.1.bottom" timestamp="1637320542093">
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1637333452696" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1637330514719">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1637320542093" />
-    <state width="938" height="348" key="GridCell.Tab.1.center" timestamp="1637320542092">
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1637330514719" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1637330514719">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1637320542092" />
-    <state width="938" height="348" key="GridCell.Tab.1.left" timestamp="1637320542092">
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1637330514719" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1637330514719">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1637320542092" />
-    <state width="938" height="348" key="GridCell.Tab.1.right" timestamp="1637320542092">
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1637330514719" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1637330514719">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1637320542092" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1637330514719" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1637320282710">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1637320282710" />
-    <state x="667" y="122" width="585" height="795" key="find.popup" timestamp="1637318512959">
+    <state x="667" y="122" width="585" height="795" key="find.popup" timestamp="1637332037020">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="667" y="122" width="585" height="795" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1637318512959" />
+    <state x="667" y="122" width="585" height="795" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1637332037020" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1637330452728">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1637330452728" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Computer_Science_Introduction$test_prime_decomposition.coverage" NAME="test_prime_decomposition Coverage Results" MODIFIED="1637318902571" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ex3/testing" />
+    <SUITE FILE_PATH="coverage/Computer_Science_Introduction$test_prime_decomposition.coverage" NAME="test_prime_decomposition Coverage Results" MODIFIED="1637330507501" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ex3/testing" />
+    <SUITE FILE_PATH="coverage/Computer_Science_Introduction$genes.coverage" NAME="genes Coverage Results" MODIFIED="1637333452687" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ex3" />
     <SUITE FILE_PATH="coverage/Computer_Science_Introduction$prime_decomposition.coverage" NAME="prime_decomposition Coverage Results" MODIFIED="1637322680112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ex3" />
   </component>
 </project>

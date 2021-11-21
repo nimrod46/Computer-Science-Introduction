@@ -1,3 +1,4 @@
+import math
 import random
 
 from ex3.prime_decomposition import *

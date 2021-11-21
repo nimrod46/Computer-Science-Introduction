@@ -7,12 +7,12 @@ Program: genes.py
 
 
 def next_gene(i, s):
-    s = str(s[i:])
+    s = str(s[i:])  # Slicing string from search starting point
     gene_start = s.find("ATG")
-    if gene_start == -1:
+    if gene_start == -1:  # No gene found
         return None, None
     j = 0
-    for j in range(gene_start, len(s), 3):
+    for j in range(gene_start, len(s), 3):  # From start point, search for the END Codon index (j)
         if s[j:j + 3] == "TAA" or s[j:j + 3] == "TAG" or s[j:j + 3] == "TGA":
             break
     return i + gene_start, i + j + 3
@@ -28,29 +28,29 @@ def get_genes(s):
 
 
 def gene_to_protein(gene):
-    gene_text = ""
-    for i in range(0, len(gene) - 3, 3):
-        gene_text += symbols_by_codons[gene[i: i + 3]]
-    return gene_text
+    protein = ""
+    for i in range(0, len(gene) - 3, 3):  # Iterates over a gene by "Codons steps" (3 steps) excluding the END Codon
+        protein += symbols_by_codons[gene[i: i + 3]]  # Converting Codon to it's mapped symbol
+    return protein
 
 
 def get_proteins(genes):
-    amino_acids = []
+    proteins = []
     for gene in genes:
-        amino_acids.append(gene_to_protein(gene))
-    return amino_acids
+        proteins.append(gene_to_protein(gene))
+    return proteins
 
 
 def main():
     file_name = input("Type file name to translate: ")
-    with open(file_name + ".txt") as f:
-        text = f.read()
+    with open(file_name + ".txt") as input_file:
+        text = input_file.read()
         genes = get_genes(text)
         proteins = get_proteins(genes)
         print("Found", len(proteins), "genes")
-        with open(file_name + "_proteins.txt", "w") as output:
+        with open(file_name + "_proteins.txt", "w") as output_file:
             for protein in proteins:
-                output.write(protein + "\n")
+                output_file.write(protein + "\n")
 
 
 if __name__ == '__main__':

@@ -89,8 +89,10 @@ def main():
 
     max_avg = max_avg_student(students_names_by_id, students_grades_by_id)
     print(f"Best student: {max_avg[1]}, average: {max_avg[0]}")
+
     max_grades = max_grades_count(students_names_by_id, students_grades_by_id)
-    print(f"The grade {max_grades[0][0]} appeared {max_grades[0][1]} times")
+    print(f"The grade {', '.join([str(t[0]) for t in max_grades])} appeared {max_grades[0][1]} times")
+
     missing_grades = grades_not_presents(students_grades_by_id)
     print(f"The grades that did not appear:")
     print(list(missing_grades))

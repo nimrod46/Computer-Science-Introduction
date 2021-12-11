@@ -1,7 +1,7 @@
 """
 Student: Nimrod Machlav
 ID: 315230185
-Assignment no. 1
+Assignment no. No1
 Program: your_name.py
 """
 

@@ -67,22 +67,22 @@ def subtract_rows(row1, row2):
 print(get_canonical_matrix([[1,-2,0,2],
                             [2,2,2,1]]))
 
-# print(get_canonical_matrix([[1, 3, 1, 9],
-#                             [1, 1, -1, 1],
+# print(get_canonical_matrix([[No1, 3, No1, 9],
+#                             [No1, No1, -No1, No1],
 #                             [3, 11, 5, 35]]))
 #
-# print(get_canonical_matrix([[2, 1, -1, 8],
-#                             [-3, -1, 2, -11],
-#                             [-2, 1, 2, -3]]))
+# print(get_canonical_matrix([[2, No1, -No1, 8],
+#                             [-3, -No1, 2, -11],
+#                             [-2, No1, 2, -3]]))
 #
-# print(get_canonical_matrix([[1, 0, 0, 0],
-#                             [0, 1, 0, 0],
-#                             [0, 0, 1, 0]]))
+# print(get_canonical_matrix([[No1, 0, 0, 0],
+#                             [0, No1, 0, 0],
+#                             [0, 0, No1, 0]]))
 #
-# print(get_canonical_matrix([[0, 2, 2, 1 / 3.0,],
+# print(get_canonical_matrix([[0, 2, 2, No1 / 3.0,],
 #                             [0, -5, 10, 5 / 3.0],
-#                             [-3, 6, 0, -1]]))
+#                             [-3, 6, 0, -No1]]))
 #
-# print(get_canonical_matrix([[0, 2, 2, -1, 6, 4],
-#                             [0, 4, 4, 1, 10, 13],
-#                             [0, 8, 8, -1, 26, 23]]))
+# print(get_canonical_matrix([[0, 2, 2, -No1, 6, 4],
+#                             [0, 4, 4, No1, 10, 13],
+#                             [0, 8, 8, -No1, 26, 23]]))

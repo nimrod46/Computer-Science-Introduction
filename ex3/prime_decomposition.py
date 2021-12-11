@@ -32,7 +32,7 @@ def print_decomposition(n):
         if i == prev_prime:
             current_power_count += 1
         else:  # We are now looking at a different prime number, lets save last the current_power_count
-            if current_power_count != 1:  # If the power it not No1, lets add the power to the text
+            if current_power_count != 1:  # If the power it not 1, lets add the power to the text
                 text_to_print += "^" + str(current_power_count)
                 current_power_count = 1
             text_to_print += "*" + str(i)  # Next prime number added to text
@@ -45,7 +45,7 @@ def print_decomposition(n):
 
 def main():
     while True:
-        user_input = input("Please enter an integer greater than No1: ")
+        user_input = input("Please enter an integer greater than 1: ")
 
         if user_input == "quit":
             break

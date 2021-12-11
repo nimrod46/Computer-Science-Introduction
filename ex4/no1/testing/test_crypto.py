@@ -1,4 +1,4 @@
-from ex4.No1.crypto import *
+from ex4.no1.crypto import *
 
 
 def test_is_key_legal():

@@ -1,0 +1,8 @@
+False  : 3
+True   : 3
+def    : 4
+else   : 2
+for    : 1
+if     : 4
+in     : 1
+return : 6

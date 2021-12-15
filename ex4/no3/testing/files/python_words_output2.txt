@@ -1,0 +1,9 @@
+class  : 1
+def    : 3
+elif   : 2
+else   : 1
+from   : 3
+if     : 1
+import : 3
+raise  : 1
+return : 2

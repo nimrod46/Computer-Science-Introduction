@@ -1,3 +1,11 @@
+"""
+Student: Nimrod Machlav
+ID: 315230185
+Assignment no. 4
+Program: crypto.py
+"""
+
+
 from random import *
 
 

@@ -1,3 +1,9 @@
+"""
+Student: Nimrod Machlav
+ID: 315230185
+Assignment no. 4
+Program: grades.py
+"""
 
 
 def students_read():

@@ -4,14 +4,12 @@ ID: 315230185
 Assignment no. 4
 Program: crypto.py
 """
-
-
 from random import *
 
 
 def is_key_legal(key):
     """
-    Validating a given key
+    Validating a given key: checks if (all and only) letters in the alphabet are presents
     :param key: Key to validate
     :return: True if the given key is legal, otherwise False
     """
@@ -20,16 +18,19 @@ def is_key_legal(key):
     for c in key:
         if ord(c) < ord("a") or ord(c) > ord("z"):
             return False
+    if len(set([i for i in key])) != 26:
+        return False
     return True
 
 
 def generate_key():
     """
-    Generates a random key
+    Generates a random legal key
     :return: Random key
     """
-    key = "".join([chr(ord("a") + randint(0, 25)) for i in range(26)])
-    return key
+    lst = [chr(ord("a") + i) for i in range(26)]
+    shuffle(lst)
+    return "".join(lst)
 
 
 def encrypt(s, k):

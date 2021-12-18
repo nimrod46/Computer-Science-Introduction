@@ -3,6 +3,7 @@ from ex4.no1.crypto import *
 
 def test_is_key_legal():
     assert is_key_legal("groexuwtdmzvbjqkfnchliysap")
+    assert not is_key_legal("groexuwfdmzvbjqkfnchliysap")
     assert not is_key_legal("groexuwDdmzvbjqkfnchliysap")
     assert not is_key_legal("groexuwdcdmzvbjqkfnchliysap")
     assert not is_key_legal("groexdmzvbjqkfnchliysap")

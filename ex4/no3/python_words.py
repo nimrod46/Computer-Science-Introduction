@@ -16,12 +16,12 @@ def remove_from_string(s, start, end):
     s = str(s)
     new_string = ""
     next_start_index = s.find(start)
-    end_index = s.find(end, next_start_index + 1)
+    end_index = s.find(end, next_start_index + len(start))
     while end_index != -1 and next_start_index != -1:
         new_string += s[:next_start_index]
         s = s[end_index + len(end):]
         next_start_index = s.find(start)
-        end_index = s.find(end, next_start_index + 1)
+        end_index = s.find(end, next_start_index + len(start))
     return new_string + s
 
 

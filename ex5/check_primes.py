@@ -2,6 +2,10 @@ import random
 
 
 def is_probably_prime(n):
+    """
+    Calculating whether "n" has a high chance of being a prime number
+    :return: True if "n" calculated to be a prime number, else False
+    """
     for i in range(20):
         if not is_suspected_prime(n):
             return False
@@ -9,6 +13,10 @@ def is_probably_prime(n):
 
 
 def is_suspected_prime(n):
+    """
+    Checking if "n" is a suspected prime number using "Fermat primality test"
+    :return: True if "n" found to be a suspected prime, else False
+    """
     a = random.randint(2, n - 1)
     d = modular_power(a, (n - 1) // 2, n)
     return d == 1 or d == n - 1
@@ -33,6 +41,11 @@ def modular_power(a, b, n):
 
 
 def compute_result(input_file_name, output_file_name):
+    """
+    Reads list of numbers from "input_file_name" file and writes for each number whether is he a prime or not prime
+    using "is_probably_prime".
+    Result will be saved into "output_file_name" file, even numbers won't be checked
+    """
     with open(input_file_name, "r") as file_input:
         with open(output_file_name, "w") as output_file:
             for n in file_input.readlines():
@@ -44,6 +57,9 @@ def compute_result(input_file_name, output_file_name):
 
 
 def main():
+    """
+    Reads numbers from "input_ex1" file into "output_ex1.txt" file using compute_result
+    """
     compute_result("input_ex1.txt", "output_ex1.txt")
 
 

@@ -1,3 +1,11 @@
+"""
+Student: Nimrod Machlav
+ID: 315230185
+Assignment no. 5
+Program: print_sums.py
+"""
+
+
 def print_sums_helper(n, s, parts, writer):
     """
     Writes all sum combinations of "n" by all numbers in "parts" list into "writer" file using "s"

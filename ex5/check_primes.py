@@ -1,3 +1,10 @@
+"""
+Student: Nimrod Machlav
+ID: 315230185
+Assignment no. 5
+Program: check_primes.py
+"""
+
 import random
 
 

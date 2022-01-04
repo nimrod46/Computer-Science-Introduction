@@ -30,4 +30,11 @@ def print_words_inf():
         last_words_set = last_words_set.union(set(word))
 
 
-print(print_words_inf())
+def reverse_list(lst):
+    if lst == []:
+        return []
+    new_lst = [lst.pop()]
+    new_lst += reverse_list(lst)
+    return new_lst
+
+print("123456"[])

@@ -49,8 +49,6 @@ def main():
 
     count_mines(board)
 
-    print_board(board, True)
-
     while True:
         cords = input("Type next square to uncover (i.e '1 2' for 1X2): ")
         r = int(cords.split()[0])

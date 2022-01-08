@@ -33,7 +33,16 @@ class MSSquare:
 
 
 def main():
-    size = int(input("Please type board size between 4 to 9: "))
+    size = 0
+    while True:
+        try:
+            size = int(input("Please type board size between 4 to 9: "))
+            if size > 9 or size < 4:
+                raise Exception
+            break
+        except:
+            print("Invalid input!")
+            continue
     board = []
     for x in range(size):
         board_line = []
@@ -51,8 +60,14 @@ def main():
 
     while True:
         cords = input("Type next square to uncover (i.e '1 2' for 1X2): ")
-        r = int(cords.split()[0])
-        c = int(cords.split()[1])
+        try:
+            r = int(cords.split()[0])
+            c = int(cords.split()[1])
+            if c > size or c < 1 or r < 1 or r > size:
+                raise Exception
+        except:
+            print("Invalid input!")
+            continue
         uncover_square(board, r - 1, c - 1)
         print_board(board)
         game_state = get_game_sate(board)
@@ -67,6 +82,9 @@ def main():
 
 
 def get_game_sate(board):
+    """
+    Returns the game state: "Lost", "Won" or "In progress"
+    """
     n = len(board)
     in_progress = False
     for r in range(n):
@@ -79,23 +97,31 @@ def get_game_sate(board):
 
 
 def uncover_square(board, r, c):
-    uncover_all_non_mine_square(board, r, c)
-    return board[r][c].has_mine
+    """
+    Uncovers all adjacent squares that are not mines at a specified square
+    """
+    uncover_all_adjacent_squares(board, r, c)
 
 
-def uncover_all_non_mine_square(board, r, c):
+def uncover_all_adjacent_squares(board, r, c):
+    """
+    Recursively uncovers all adjacent squares until the next adjacent mine square
+    """
     board[r][c].hidden = False
     if board[r][c].has_mine or board[r][c].neighbor_mines != 0:
         return
 
     def uncover(ms_square, x, y):
         if ms_square.hidden:
-            uncover_all_non_mine_square(board, x, y)
+            uncover_all_adjacent_squares(board, x, y)
 
-    execute_on_near_squares(board, r, c, uncover)
+    execute_on_adjacent_square(board, r, c, uncover)
 
 
-def count_mines_near(board, r, c):
+def count_adjacent_mines(board, r, c):
+    """
+    Returns the count of adjacent mines at a specified square
+    """
     count = 0
 
     def count_mine(ms_square, *_):
@@ -103,11 +129,14 @@ def count_mines_near(board, r, c):
         if ms_square.has_mine:
             count += 1
 
-    execute_on_near_squares(board, r, c, count_mine)
+    execute_on_adjacent_square(board, r, c, count_mine)
     return count
 
 
-def execute_on_near_squares(board, r, c, command):
+def execute_on_adjacent_square(board, r, c, command):
+    """
+    Execute a specified command on adjacent squares
+    """
     n = len(board)
     for x in range(-1, 2):
         for y in range(-1, 2):
@@ -119,19 +148,27 @@ def execute_on_near_squares(board, r, c, command):
 
 
 def count_mines(board):
+    """
+    Update all squares's neighbor mines count
+    """
     n = len(board)
     for r in range(n):
         for c in range(n):
-            board[r][c].neighbor_mines = count_mines_near(board, r, c)
+            board[r][c].neighbor_mines = count_adjacent_mines(board, r, c)
 
 
-def print_board(board, should_expose_all=False, show_mines=False):
+def print_board(board, should_expose_all=False, expose_mines=False):
+    """
+    Prints board to screen, by default shows only non hidden squares.
+    "should_expose_all" will expose all squares if True
+    "expose_mines" will expose all mines if True
+    """
     n = len(board)
     for r in range(n):
         print(" " + "+---" * n + "+")
         print(f"{r + 1}|", end="")
         for c in range(n):
-            if board[r][c].has_mine and show_mines:
+            if board[r][c].has_mine and expose_mines:
                 print(f" x |", end="")
                 continue
             if board[r][c].hidden and not should_expose_all:

@@ -48,18 +48,36 @@ def main():
         mine.has_mine = True
 
     count_mines(board)
+
     print_board(board, True)
 
     while True:
         cords = input("Type next square to uncover (i.e '1 2' for 1X2): ")
         r = int(cords.split()[0])
         c = int(cords.split()[1])
-        if uncover_square(board, r - 1, c - 1):
-            print_board(board)
-            break
+        uncover_square(board, r - 1, c - 1)
         print_board(board)
+        game_state = get_game_sate(board)
+        if game_state == "Lost":
+            print("Boom!")
+            break
+        elif game_state == "Won":
+            print("Congrats! You won!!")
+            break
 
-    print_board(board, True)
+    print_board(board, False, True)
+
+
+def get_game_sate(board):
+    n = len(board)
+    in_progress = False
+    for r in range(n):
+        for c in range(n):
+            if not board[r][c].hidden and board[r][c].has_mine:
+                return "Lost"
+            if board[r][c].hidden and not board[r][c].has_mine:
+                in_progress = True
+    return "In progress" if in_progress else "Won"
 
 
 def uncover_square(board, r, c):
@@ -109,18 +127,22 @@ def count_mines(board):
             board[r][c].neighbor_mines = count_mines_near(board, r, c)
 
 
-def print_board(board, should_expose=False):
+def print_board(board, should_expose_all=False, show_mines=False):
     n = len(board)
     for r in range(n):
         print(" " + "+---" * n + "+")
         print(f"{r + 1}|", end="")
         for c in range(n):
-            if board[r][c].hidden and not should_expose:
-                print("   |", end="")
-            elif board[r][c].has_mine:
+            if board[r][c].has_mine and show_mines:
                 print(f" x |", end="")
-            else:
-                print(f" {board[r][c].neighbor_mines} |", end="")
+                continue
+            if board[r][c].hidden and not should_expose_all:
+                print("   |", end="")
+                continue
+            if board[r][c].has_mine:
+                print(f" x |", end="")
+                continue
+            print(f" {board[r][c].neighbor_mines} |", end="")
         print()
     print(" " + "+---" * n + "+")
     print("   " + "   ".join([str(i) for i in range(1, n + 1)]))

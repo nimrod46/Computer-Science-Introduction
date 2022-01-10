@@ -21,8 +21,8 @@ def read_input(file_name):
 
 def find_intersection(f, a, b, epsilon=10 ** (-4), n=100):
     ''' finds an approximation to a root of
-    f using the Newton Raphson method'''
-
+    f using the Newton Raphson method
+    '''
     deriv = diff(f)
     x0 = uniform(a, b)
     while abs(deriv(x0)) < epsilon:
@@ -47,15 +47,12 @@ def get_intersection_result(x, f):
 
 def print_output(file_name):
     f, g, a, b = read_input(file_name)
-    x = None
     try:
         x = find_intersection(func_diff(f, g), a, b)
     except:
-        pass
-    if x is not None:
-        print(get_intersection_result(x, f))
+        print("no intersection")
         return
-    print("no intersection")
+    print(get_intersection_result(x, f))
 
 
 def main():

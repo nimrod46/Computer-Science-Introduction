@@ -3,6 +3,9 @@ import matplotlib.pyplot as plt
 
 
 def plot(funcs, a, b, title="", legend='', show_grid=False, h=0.001):
+    """
+    Plots all functions in "funcs" to the same plot view
+    """
     max_x = 0
     min_x = 100000
     max_y = 0
@@ -26,7 +29,11 @@ def plot(funcs, a, b, title="", legend='', show_grid=False, h=0.001):
 
 
 def main():
-    with open("functions2.txt", "r") as funcs_file:
+    """
+    Reads all functions from "functions.txt" file and plot range.
+    Calling "plot" with the params accordingly
+    """
+    with open("functions.txt", "r") as funcs_file:
         data = funcs_file.readlines()
     a, b = data[-1].split()[0], data[-1].split()[1]
     data.pop()

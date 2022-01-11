@@ -43,21 +43,22 @@ def main():
         except:
             print("Invalid input!")
             continue
-    board = []
-    for x in range(size):
-        board_line = []
-        for y in range(size):
-            board_line.append(MSSquare())
-        board.append(board_line)
 
-    flat_board = sum(board, [])
-    for i in range(size * 2):
-        mine = random.choice(flat_board)
-        flat_board.remove(mine)
-        mine.has_mine = True
+    board = get_board_by_size(size)
+
+    fill_board_with_mines(board)
 
     count_mines(board)
 
+    run_game(board)
+
+
+def run_game(board):
+    size = len(board)
+    """
+    Runs game logic, using prefilled board, each turn the player chooses a square to uncover
+    while hoping not to fall on a mine
+    """
     while True:
         cords = input("Type next square to uncover (i.e '1 2' for 1X2): ")
         try:
@@ -77,7 +78,6 @@ def main():
         elif game_state == "Won":
             print("Congrats! You won!!")
             break
-
     print_board(board, False, True)
 
 
@@ -181,6 +181,31 @@ def print_board(board, should_expose_all=False, expose_mines=False):
         print()
     print(" " + "+---" * n + "+")
     print("   " + "   ".join([str(i) for i in range(1, n + 1)]))
+
+
+def get_board_by_size(size):
+    """
+    :return: Game board (sizeXsize) filled with MSSquare objects
+    """
+    board = []
+    for x in range(size):
+        board_line = []
+        for y in range(size):
+            board_line.append(MSSquare())
+        board.append(board_line)
+    return board
+
+
+def fill_board_with_mines(board):
+    """
+    "Flips" n to 2n randomly selected MSSquare in board to mines (when n = len(board))
+    """
+    size = len(board)
+    flat_board = sum(board, [])
+    for i in range(random.randint(size, size * 2)):
+        mine = random.choice(flat_board)
+        flat_board.remove(mine)
+        mine.has_mine = True
 
 
 if __name__ == '__main__':

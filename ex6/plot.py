@@ -1,3 +1,10 @@
+"""
+Student: Nimrod Machlav
+ID: 315230185
+Assignment no. 6
+Program: plot.py
+"""
+
 from math import *
 import matplotlib.pyplot as plt
 

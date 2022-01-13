@@ -37,4 +37,3 @@ def reverse_list(lst):
     new_lst += reverse_list(lst)
     return new_lst
 
-print("123456"[])

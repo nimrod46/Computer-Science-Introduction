@@ -46,6 +46,19 @@ def main():
             size = int(input("Please type board size between 4 to 9: "))
             if size > 9 or size < 4:
                 raise Exception
+
+            break
+        except:
+            print("Invalid input!")
+            continue
+
+    mines_count = 0
+    while True:
+        try:
+            mines_count = int(input(f"Please type the number of mines from {size} to {size * 2}: "))
+            if mines_count > size * 2 or mines_count < size:
+                raise Exception
+
             break
         except:
             print("Invalid input!")
@@ -53,7 +66,7 @@ def main():
 
     board = get_board_by_size(size)
 
-    fill_board_with_mines(board)
+    fill_board_with_mines(board, mines_count)
 
     count_mines(board)
 
@@ -66,6 +79,8 @@ def run_game(board):
     Runs game logic, using prefilled board, each turn the player chooses a square to uncover
     while hoping not to fall on a mine
     """
+    print_board(board)
+    game_state = ""
     while True:
         cords = input("Type next square to uncover (i.e '1 2' for 1X2): ")
         try:
@@ -80,12 +95,14 @@ def run_game(board):
         print_board(board)
         game_state = get_game_sate(board)
         if game_state == "Lost":
-            print("Boom!")
             break
         elif game_state == "Won":
-            print("Congrats! You won!!")
             break
     print_board(board, False, True)
+    if game_state == "Lost":
+        print("Boom! Game over!!")
+    if game_state == "Won":
+        print("Congrats! You have won!!")
 
 
 def get_game_sate(board):
@@ -203,13 +220,13 @@ def get_board_by_size(size):
     return board
 
 
-def fill_board_with_mines(board):
+def fill_board_with_mines(board, mines_count):
     """
     "Flips" n to 2n randomly selected MSSquare in board to mines (when n = len(board))
     """
     size = len(board)
     flat_board = sum(board, [])
-    for i in range(random.randint(size, size * 2)):
+    for i in range(mines_count):
         mine = random.choice(flat_board)
         flat_board.remove(mine)
         mine.has_mine = True

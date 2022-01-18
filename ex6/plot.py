@@ -13,10 +13,10 @@ def plot(funcs, a, b, title="", legend='', show_grid=False, h=0.001):
     """
     Plots all functions in "funcs" to the same plot view
     """
-    max_x = 0
-    min_x = 100000
-    max_y = 0
-    min_y = 100000
+    max_x = a
+    min_x = a
+    max_y = funcs[0](a)
+    min_y = funcs[0](a)
     for f in funcs:
         x_vals = [a + i * h for i in range(int((b - a) / h))]
         y_vals = [f(x) for x in x_vals]
@@ -44,7 +44,7 @@ def main():
         data = funcs_file.readlines()
     a, b = data[-1].split()[0], data[-1].split()[1]
     data.pop()
-    plot(map(lambda f: eval(f"lambda x: {f}"), data), float(a), float(b))
+    plot(list(map(lambda f: eval(f"lambda x: {f}"), data)), float(a), float(b))
 
 
 if __name__ == '__main__':

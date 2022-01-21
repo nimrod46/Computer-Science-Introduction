@@ -13,8 +13,12 @@ def test_how_many_below():
     assert how_many_below([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 5) == 4
 
 
-def test_divide_list():
-    assert divide_list([78, 57, 45, 4, 43, 45, 34, 12], 4) == [[78, 57], [45, 4], [43, 45], [34, 12]]
+def test_divide_list1():
+    assert divide_list1([78, 57, 45, 4, 43, 45, 34, 12], 4) == [[78, 57], [45, 4], [43, 45], [34, 12]]
+
+
+def test_divide_list2():
+    assert divide_list2([78, 57, 45, 4, 43, 45, 34, 12], 4) == [[78, 57], [45, 4], [43, 45], [34, 12]]
 
 
 def test_creat_matrix():

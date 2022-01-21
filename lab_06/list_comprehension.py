@@ -10,9 +10,14 @@ def how_many_below(arr, threshold):
     return sum([1 if i < threshold else 0 for i in arr])
 
 
-def divide_list(arr, num_of_inner_lists):
+def divide_list1(arr, num_of_inner_lists):
     inner_len = (len(arr) // num_of_inner_lists)
     return [[arr[j] for j in range(inner_len * i, inner_len * i + inner_len)] for i in range(num_of_inner_lists)]
+
+
+def divide_list2(arr, num_of_inner_lists):
+    inner_len = (len(arr) // num_of_inner_lists)
+    return [[arr[j + i * inner_len] for j in range(inner_len)] for i in range(num_of_inner_lists)]
 
 
 def create_matrix(size):

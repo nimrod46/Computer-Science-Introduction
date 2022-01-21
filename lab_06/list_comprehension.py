@@ -11,7 +11,8 @@ def how_many_below(arr, threshold):
 
 
 def divide_list(arr, num_of_inner_lists):
-    return [[arr[i + j] for j in range(i, i + len(arr) // num_of_inner_lists)] for i in range(num_of_inner_lists)]
+    inner_len = (len(arr) // num_of_inner_lists)
+    return [[arr[j] for j in range(inner_len * i, inner_len * i + inner_len)] for i in range(num_of_inner_lists)]
 
 
 def create_matrix(size):
